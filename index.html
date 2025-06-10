@@ -2198,7 +2198,7 @@
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
                 <h1>קורס עריכת וידאו אונליין</h1>
                 <p>הקורס שיעזור לך לשלוט בתוכן שלך – בלי להיות עורך וידאו מקצועי. שלב אחרי שלב, עם תמיכה אישית, ותוצאות מיידיות.</p>
-                <a href="https://mrng.to/2ESUeMTgFV" class="cta-btn pulse-animation">אני רוצה להצטרף עכשיו!</a>
+                <a href="https://mrng.to/2ESUeMTgFV" class="cta-btn pulse-animation" onclick="fbq('track', 'InitiateCheckout', {value: 47, currency: 'ILS'});">אני רוצה להצטרף עכשיו!</a>
             </div>
         </div>
     </section>
@@ -2371,7 +2371,7 @@
                     <li>הדרכה מעשית בעברית, ברורה ופשוטה</li>
                     <li>גישה לכל החיים לכל התכנים</li>
                 </ul>
-                <a href="https://mrng.to/2ESUeMTgFV" class="cta-btn">אני רוצה להצטרף!</a>
+                <a href="https://mrng.to/2ESUeMTgFV" class="cta-btn" onclick="fbq('track', 'Purchase', {value: 47, currency: 'ILS'});">אני רוצה להצטרף!</a>
             </div>
         </div>
     </section>
@@ -2497,7 +2497,7 @@
     <section class="final-cta">
         <div class="container">
             <h2 data-aos="fade-up" data-aos-duration="1000">מוכן להתחיל לשלוט בתוכן שלך?</h2>
-            <a href="https://mrng.to/2ESUeMTgFV" class="cta-btn pulse-animation" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">כן! אני רוצה להצטרף עכשיו!</a>
+            <a href="https://mrng.to/2ESUeMTgFV" class="cta-btn pulse-animation" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" onclick="fbq('track', 'Lead');">כן! אני רוצה להצטרף עכשיו!</a>
         </div>
     </section>
     
@@ -2530,6 +2530,34 @@
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <!-- End Google Analytics -->
 
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
